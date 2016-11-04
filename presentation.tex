@@ -1,0 +1,43 @@
+%\documentclass[first=dgreen,second=purple,logo=yellowexc]{aaltoslides}
+%\documentclass{aaltoslides} % DEFAULT
+%\documentclass[first=purple,second=lgreen,logo=redque,normaltitle,nofoot]{aaltoslides} % SOME OPTION 
+\documentclass[first=purple,second=blue,logo=blueque]{./misc/aaltoslides}
+%EXAMPLES
+
+\usepackage[latin9]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amssymb,amsmath}
+\usepackage{url} 
+\usepackage{lastpage}
+
+\title{Representation learning}
+
+\institute[~]{Aalto deep learning course}
+\author[~]{Ari Silvennoinen, Eero Siivola and Jin Yan}
+\aaltofootertext{}{11.11.2016}{\arabic{page}/\pageref{LastPage}\ }
+
+\date{11.11.2016}
+
+\graphicspath{{./figures/}}
+
+\begin{document}
+
+\aaltotitleframe
+
+\input{part1.tex} %eero
+
+\input{part2.tex} %Jin
+
+\input{part3.tex} %Ari
+
+\begin{frame}{References}
+\begin{thebibliography}{9}
+\setbeamertemplate{bibliography item}[article]
+\bibitem{A}
+Goodfellow, I., Bengio, Y., and Courville, A. (2016). Deep learning. Book in prepara-
+tion for MIT Press.
+\end{thebibliography}
+\end{frame}
+
+\end{document}

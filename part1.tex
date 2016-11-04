@@ -1,0 +1,28 @@
+%This is a comment
+
+%each slide is defined with \begin{frame}{SLIDETITLE} ... \end{frame}
+\begin{frame}{Contents}
+An example of itemize
+\begin{itemize}
+  \item Item 1
+  \begin{itemize} % itemize environments can be layered
+    \item Item 1
+    \item Item 2
+  \end{itemize}
+  \item Item 2
+\end{itemize}
+An example of enumerate
+\begin{enumerate} %similar to itemize but with numbers as bullets
+  \item Item 1
+  \item Item 2
+\end{enumerate}
+\end{frame}
+
+%this slide demonstrates how to include images 
+\begin{frame}{Figure}
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{test_image.pdf} %the test_imgae is located in the "figures" folder. Place your figures there as well!
+\caption{Caption for the image}
+\end{figure}
+\end{frame}
