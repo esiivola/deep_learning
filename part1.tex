@@ -2,27 +2,73 @@
 
 %each slide is defined with \begin{frame}{SLIDETITLE} ... \end{frame}
 \begin{frame}{Contents}
-An example of itemize
-\begin{itemize}
-  \item Item 1
-  \begin{itemize} % itemize environments can be layered
-    \item Item 1
-    \item Item 2
-  \end{itemize}
-  \item Item 2
-\end{itemize}
-An example of enumerate
-\begin{enumerate} %similar to itemize but with numbers as bullets
-  \item Item 1
-  \item Item 2
+\begin{enumerate}
+  \item Motivation
+  \item Greedy layer-wise unsuperwised pretraining
+  \item Transfer learning and domain adaptation
+  \item Semi-supervised disentagling of causal factors
+  \item Distributed representation
+  \item Exponential gians from depth
+  \item Ideas to discover underlying causes
 \end{enumerate}
 \end{frame}
 
-%this slide demonstrates how to include images 
-\begin{frame}{Figure}
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.5\textwidth]{test_image.pdf} %the test_imgae is located in the "figures" folder. Place your figures there as well!
-\caption{Caption for the image}
-\end{figure}
+%%this slide demonstrates how to include images 
+%\begin{frame}{Figure}
+%\begin{figure}[t]
+%\centering
+%\includegraphics[width=0.5\textwidth]{test_image.pdf} %the test_imgae is located in the "figures" folder. Place your figures there as well!
+%\caption{Caption for the image}
+%\end{figure}
+%\end{frame}
+
+\begin{frame}{Motivation}
+\begin{itemize}
+\item What is $\frac{CCX}{V}$?
+\begin{itemize}
+\item Ehm... What?
+\end{itemize}
+\item What is $\frac{210}{5}$?
+\begin{itemize}
+\item Easy! (42)
+\end{itemize}
+\item Inserting a number to a sorted list?
+\begin{itemize}
+\item $\mathcal{O}(n)$ if linked list
+\item $\mathcal{O}(\log n)$ if red-black tree
+\end{itemize}
+\end{itemize}
+The hardness of the task depends on how the information is presented
+\end{frame}
+
+\begin{frame}{Motivation}
+The hardness of the task depends on how the information is presented:
+\begin{itemize}
+\item What is $\frac{CCX}{V}$?
+\begin{itemize}
+\item Ehm... What?
+\end{itemize}
+\item What is $\frac{210}{5}$?
+\begin{itemize}
+\item Easy! (42)
+\end{itemize}
+\item Inserting a number to a sorted list?
+\begin{itemize}
+\item $\mathcal{O}(n)$ if linked list
+\item $\mathcal{O}(\log n)$ if red-black tree
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+What makes one representation of the information better than other?
+\begin{itemize}
+\item Finding maximum from a sorted list?
+\begin{itemize}
+\item $\mathcal{O}(1)$ if linked list
+\item $\mathcal{O}(\log n)$ if red-black tree
+\end{itemize}
+\end{itemize}
+Subsequent tasks matter!
 \end{frame}
