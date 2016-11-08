@@ -172,6 +172,17 @@ Discussion:
 \begin{itemize}
 \item Many hyper-parameters
 \item How to control the regularization?
+\item Performance of latter cannot be predicted during the first
+\item Changing hyper-parameters of first phase takes long
+\begin{itemize}
+\item Use validation error of second phase to propose hyper-parameters for the first (Larochelle \textit{et al.} (2009))
+\end{itemize}
+\end{itemize}
+\item Today, unsupervised pretraining is mainly used only in the field of natural language processing
+\item Bayesian methods outperform pretraining based methods if not much data
+\begin{itemize}
+\item However, important milestone
+\item has been generalised to supervised pretraining
 \end{itemize}
 \end{itemize}
 \end{frame}
