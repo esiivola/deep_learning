@@ -4,11 +4,11 @@
 \begin{frame}{Contents}
 \begin{enumerate}
   \item Motivation
-  \item Greedy layer-wise unsuperwised pretraining
+  \item Greedy layer-wise unsupervised pretraining
   \item Transfer learning and domain adaptation
   \item Semi-supervised disentagling of causal factors
-  \item Distributed representation
-  \item Exponential gians from depth
+  \item Distributed representations
+  \item Exponential gains from depth
   \item Ideas to discover underlying causes
 \end{enumerate}
 \end{frame}
@@ -94,7 +94,7 @@ One way of unsupervised pre-training, dates back to 1975. General idea:
 \item Learn latent representation of a layer while keeping weights of previous layers fixed
 \item Start from the first layer and proceed forward
 \item Use some single layer representation algorithm such as Restricted Boltzmann Machines (RBM), auto-encoders or sparse coding models.
-\item Fine tune the networks with labelled data
+\item Fine-tune the networks with labelled data
 \end{itemize}
 \end{frame}
 
@@ -112,9 +112,9 @@ Where does the algorithm name come from?
 \item{\bf greedy}: It optimises one part at a time
 \item{\bf layer-wise}: optimises one layer at a time
 \item{\bf unsupervised}: learning is done in an unsupervised manner
-\item{\bf pretraining}: fine tuning step is done after the pre training part. 
+\item{\bf pretraining}: fine-tuning step is done after the pre-training part. 
 \begin{itemize}
-\item Can also be used as a pre step for other unsupervised approaches 
+\item Can also be used as a pre-step for other unsupervised approaches 
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -125,7 +125,7 @@ Why does the algorithm work?
 \item It regularizes
 \begin{itemize}
 \item Not well understood why
-\item It is possible that pretraining initializes the weights to locations otherwise inaccessible (see Ehran et al (2010))
+\item It is possible that pre-training initializes the weights to locations otherwise inaccessible (see Ehran et al (2010))
 \begin{itemize}
 \item Noisy gradients near the areas?
 \item Badly conditioned Hessians?
